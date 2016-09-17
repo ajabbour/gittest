@@ -3,3 +3,5 @@ hosts: local
 tasks:
  - name: try ping
    action: ping
+ - name: copy file
+   copy: src=/etc/ansible dest=/home/srv_ansible
